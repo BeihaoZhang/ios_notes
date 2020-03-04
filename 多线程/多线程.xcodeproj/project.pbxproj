@@ -12,6 +12,7 @@
 		8AD90F79240EA1F70066CB44 /* MJSemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90F78240EA1F70066CB44 /* MJSemaphoreDemo.m */; };
 		8AD90F7C240EB4070066CB44 /* MJSynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90F7B240EB4070066CB44 /* MJSynchronizedDemo.m */; };
 		8AD90F7F240F7AB60066CB44 /* MJReadWriteSecurityDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90F7E240F7AB60066CB44 /* MJReadWriteSecurityDemo.m */; };
+		8AD90F82240F8EA60066CB44 /* DispatchOnceDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90F81240F8EA60066CB44 /* DispatchOnceDemo.m */; };
 		8ADC9657240AA7CC001A905C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC9656240AA7CC001A905C /* AppDelegate.m */; };
 		8ADC965A240AA7CC001A905C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC9659240AA7CC001A905C /* SceneDelegate.m */; };
 		8ADC965D240AA7CC001A905C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC965C240AA7CC001A905C /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		8AD90F7B240EB4070066CB44 /* MJSynchronizedDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSynchronizedDemo.m; sourceTree = "<group>"; };
 		8AD90F7D240F7AB60066CB44 /* MJReadWriteSecurityDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJReadWriteSecurityDemo.h; sourceTree = "<group>"; };
 		8AD90F7E240F7AB60066CB44 /* MJReadWriteSecurityDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJReadWriteSecurityDemo.m; sourceTree = "<group>"; };
+		8AD90F80240F8EA60066CB44 /* DispatchOnceDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceDemo.h; sourceTree = "<group>"; };
+		8AD90F81240F8EA60066CB44 /* DispatchOnceDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceDemo.m; sourceTree = "<group>"; };
 		8ADC9652240AA7CC001A905C /* 多线程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "多线程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADC9655240AA7CC001A905C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8ADC9656240AA7CC001A905C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				8AD90F7B240EB4070066CB44 /* MJSynchronizedDemo.m */,
 				8AD90F7D240F7AB60066CB44 /* MJReadWriteSecurityDemo.h */,
 				8AD90F7E240F7AB60066CB44 /* MJReadWriteSecurityDemo.m */,
+				8AD90F80240F8EA60066CB44 /* DispatchOnceDemo.h */,
+				8AD90F81240F8EA60066CB44 /* DispatchOnceDemo.m */,
 				8ADC965E240AA7CC001A905C /* Main.storyboard */,
 				8ADC9661240AA7D0001A905C /* Assets.xcassets */,
 				8ADC9663240AA7D0001A905C /* LaunchScreen.storyboard */,
@@ -199,6 +204,7 @@
 				8ADC967E240E2E90001A905C /* MJConditionDemo.m in Sources */,
 				8ADC965D240AA7CC001A905C /* ViewController.m in Sources */,
 				8ADC9676240B9395001A905C /* MJUnfairLockDemo.m in Sources */,
+				8AD90F82240F8EA60066CB44 /* DispatchOnceDemo.m in Sources */,
 				8ADC9657240AA7CC001A905C /* AppDelegate.m in Sources */,
 				8AD90F7C240EB4070066CB44 /* MJSynchronizedDemo.m in Sources */,
 				8AD90F79240EA1F70066CB44 /* MJSemaphoreDemo.m in Sources */,

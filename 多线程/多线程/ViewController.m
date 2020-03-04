@@ -15,6 +15,8 @@
 #import "MJSemaphoreDemo.h"
 #import "MJReadWriteSecurityDemo.h"
 
+#import "DispatchOnceDemo.h"
+
 /*
  （一）断点调试技巧：
  si：执行每行汇编代码，如果碰到函数，进到函数内部，继续每行执行
@@ -126,8 +128,12 @@
 //    [demo otherTest];
     
     // 多读单写
-    MJReadWriteSecurityDemo *demo = [[MJReadWriteSecurityDemo alloc] init];
-    [demo test];
+//    MJReadWriteSecurityDemo *demo = [[MJReadWriteSecurityDemo alloc] init];
+//    [demo test];
+    
+    // 会产生死锁。单例内部的初始化中进行了相互调用
+//    ManageA *managerA = [ManageA sharedInstance];
+//    ManageB *managerB = [ManageB sharedInstance];
     
 }
 
@@ -137,3 +143,4 @@
 
 
 @end
+
