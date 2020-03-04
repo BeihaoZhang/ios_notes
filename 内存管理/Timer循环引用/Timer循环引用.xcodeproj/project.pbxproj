@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AD90FB6240F9B7F0066CB44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90FB5240F9B7F0066CB44 /* AppDelegate.m */; };
+		8AD90FB9240F9B7F0066CB44 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90FB8240F9B7F0066CB44 /* SceneDelegate.m */; };
+		8AD90FBC240F9B7F0066CB44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90FBB240F9B7F0066CB44 /* ViewController.m */; };
+		8AD90FBF240F9B7F0066CB44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD90FBD240F9B7F0066CB44 /* Main.storyboard */; };
+		8AD90FC1240F9B810066CB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD90FC0240F9B810066CB44 /* Assets.xcassets */; };
+		8AD90FC4240F9B810066CB44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD90FC2240F9B810066CB44 /* LaunchScreen.storyboard */; };
+		8AD90FC7240F9B810066CB44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90FC6240F9B810066CB44 /* main.m */; };
+		8AD90FCF240F9BCA0066CB44 /* MJProxy1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90FCE240F9BCA0066CB44 /* MJProxy1.m */; };
+		8AD90FD2240F9C5A0066CB44 /* MJProxy2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90FD1240F9C5A0066CB44 /* MJProxy2.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8AD90FB1240F9B7F0066CB44 /* Timer循环引用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer循环引用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD90FB4240F9B7F0066CB44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8AD90FB5240F9B7F0066CB44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8AD90FB7240F9B7F0066CB44 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8AD90FB8240F9B7F0066CB44 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8AD90FBA240F9B7F0066CB44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8AD90FBB240F9B7F0066CB44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8AD90FBE240F9B7F0066CB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AD90FC0240F9B810066CB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AD90FC3240F9B810066CB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AD90FC5240F9B810066CB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD90FC6240F9B810066CB44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AD90FCD240F9BCA0066CB44 /* MJProxy1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJProxy1.h; sourceTree = "<group>"; };
+		8AD90FCE240F9BCA0066CB44 /* MJProxy1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJProxy1.m; sourceTree = "<group>"; };
+		8AD90FD0240F9C5A0066CB44 /* MJProxy2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJProxy2.h; sourceTree = "<group>"; };
+		8AD90FD1240F9C5A0066CB44 /* MJProxy2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJProxy2.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AD90FAE240F9B7F0066CB44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AD90FA8240F9B7F0066CB44 = {
+			isa = PBXGroup;
+			children = (
+				8AD90FB3240F9B7F0066CB44 /* Timer循环引用 */,
+				8AD90FB2240F9B7F0066CB44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AD90FB2240F9B7F0066CB44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AD90FB1240F9B7F0066CB44 /* Timer循环引用.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD90FB3240F9B7F0066CB44 /* Timer循环引用 */ = {
+			isa = PBXGroup;
+			children = (
+				8AD90FB4240F9B7F0066CB44 /* AppDelegate.h */,
+				8AD90FB5240F9B7F0066CB44 /* AppDelegate.m */,
+				8AD90FB7240F9B7F0066CB44 /* SceneDelegate.h */,
+				8AD90FB8240F9B7F0066CB44 /* SceneDelegate.m */,
+				8AD90FBA240F9B7F0066CB44 /* ViewController.h */,
+				8AD90FBB240F9B7F0066CB44 /* ViewController.m */,
+				8AD90FCD240F9BCA0066CB44 /* MJProxy1.h */,
+				8AD90FCE240F9BCA0066CB44 /* MJProxy1.m */,
+				8AD90FD0240F9C5A0066CB44 /* MJProxy2.h */,
+				8AD90FD1240F9C5A0066CB44 /* MJProxy2.m */,
+				8AD90FBD240F9B7F0066CB44 /* Main.storyboard */,
+				8AD90FC0240F9B810066CB44 /* Assets.xcassets */,
+				8AD90FC2240F9B810066CB44 /* LaunchScreen.storyboard */,
+				8AD90FC5240F9B810066CB44 /* Info.plist */,
+				8AD90FC6240F9B810066CB44 /* main.m */,
+			);
+			path = "Timer循环引用";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AD90FB0240F9B7F0066CB44 /* Timer循环引用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD90FCA240F9B810066CB44 /* Build configuration list for PBXNativeTarget "Timer循环引用" */;
+			buildPhases = (
+				8AD90FAD240F9B7F0066CB44 /* Sources */,
+				8AD90FAE240F9B7F0066CB44 /* Frameworks */,
+				8AD90FAF240F9B7F0066CB44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timer循环引用";
+			productName = "Timer循环引用";
+			productReference = 8AD90FB1240F9B7F0066CB44 /* Timer循环引用.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AD90FA9240F9B7F0066CB44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Lincoln;
+				TargetAttributes = {
+					8AD90FB0240F9B7F0066CB44 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 8AD90FAC240F9B7F0066CB44 /* Build configuration list for PBXProject "Timer循环引用" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AD90FA8240F9B7F0066CB44;
+			productRefGroup = 8AD90FB2240F9B7F0066CB44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AD90FB0240F9B7F0066CB44 /* Timer循环引用 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AD90FAF240F9B7F0066CB44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD90FC4240F9B810066CB44 /* LaunchScreen.storyboard in Resources */,
+				8AD90FC1240F9B810066CB44 /* Assets.xcassets in Resources */,
+				8AD90FBF240F9B7F0066CB44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AD90FAD240F9B7F0066CB44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD90FBC240F9B7F0066CB44 /* ViewController.m in Sources */,
+				8AD90FB6240F9B7F0066CB44 /* AppDelegate.m in Sources */,
+				8AD90FD2240F9C5A0066CB44 /* MJProxy2.m in Sources */,
+				8AD90FC7240F9B810066CB44 /* main.m in Sources */,
+				8AD90FCF240F9BCA0066CB44 /* MJProxy1.m in Sources */,
+				8AD90FB9240F9B7F0066CB44 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AD90FBD240F9B7F0066CB44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD90FBE240F9B7F0066CB44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AD90FC2240F9B810066CB44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD90FC3240F9B810066CB44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AD90FC8240F9B810066CB44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8AD90FC9240F9B810066CB44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AD90FCB240F9B810066CB44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDEP8HYVGK;
+				INFOPLIST_FILE = "Timer循环引用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lincoln.Timer----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AD90FCC240F9B810066CB44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDEP8HYVGK;
+				INFOPLIST_FILE = "Timer循环引用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lincoln.Timer----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AD90FAC240F9B7F0066CB44 /* Build configuration list for PBXProject "Timer循环引用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD90FC8240F9B810066CB44 /* Debug */,
+				8AD90FC9240F9B810066CB44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD90FCA240F9B810066CB44 /* Build configuration list for PBXNativeTarget "Timer循环引用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD90FCB240F9B810066CB44 /* Debug */,
+				8AD90FCC240F9B810066CB44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AD90FA9240F9B7F0066CB44 /* Project object */;
+}
