@@ -20,6 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        
+    MJProxy2 *proxy = [MJProxy2 proxyWithTarget:self];
+    /* NSProxy对象的isKindOfClass，isMemberOfClass等方法实际上对target进行的消息转发。
+     通过重写的methodSignatureForSelector 和 forwardInvocation 内部方法进行的转发。
+     */
+    NSLog(@"%d", [proxy isKindOfClass:[ViewController class]]); // 返回 1
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:[MJProxy2 proxyWithTarget:self] selector:@selector(timerTest) userInfo:nil repeats:YES];
 }
