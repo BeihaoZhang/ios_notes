@@ -14,7 +14,7 @@
 		8ADC96352408EC9A001A905C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC96342408EC9A001A905C /* Assets.xcassets */; };
 		8ADC96382408EC9A001A905C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC96362408EC9A001A905C /* LaunchScreen.storyboard */; };
 		8ADC963B2408EC9A001A905C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC963A2408EC9A001A905C /* main.m */; };
-		8ADC964224090F18001A905C /* 笔记.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC964124090F18001A905C /* 笔记.rtf */; };
+		8ADC964224090F18001A905C /* 笔记.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC964124090F18001A905C /* 笔记.rtfd */; };
 		8ADC9645240A193D001A905C /* MJThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC9644240A193C001A905C /* MJThread.m */; };
 		8ADC9648240A3438001A905C /* MJPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC9647240A3438001A905C /* MJPermenantThread.m */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 		8ADC96372408EC9A001A905C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADC96392408EC9A001A905C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADC963A2408EC9A001A905C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8ADC964124090F18001A905C /* 笔记.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "笔记.rtf"; sourceTree = "<group>"; };
+		8ADC964124090F18001A905C /* 笔记.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "笔记.rtfd"; sourceTree = "<group>"; };
 		8ADC9643240A193C001A905C /* MJThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJThread.h; sourceTree = "<group>"; };
 		8ADC9644240A193C001A905C /* MJThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJThread.m; sourceTree = "<group>"; };
 		8ADC9646240A3438001A905C /* MJPermenantThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPermenantThread.h; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				8ADC9644240A193C001A905C /* MJThread.m */,
 				8ADC9646240A3438001A905C /* MJPermenantThread.h */,
 				8ADC9647240A3438001A905C /* MJPermenantThread.m */,
-				8ADC964124090F18001A905C /* 笔记.rtf */,
+				8ADC964124090F18001A905C /* 笔记.rtfd */,
 				8ADC96312408EC91001A905C /* Main.storyboard */,
 				8ADC96342408EC9A001A905C /* Assets.xcassets */,
 				8ADC96362408EC9A001A905C /* LaunchScreen.storyboard */,
@@ -146,7 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ADC964224090F18001A905C /* 笔记.rtf in Resources */,
+				8ADC964224090F18001A905C /* 笔记.rtfd in Resources */,
 				8ADC96382408EC9A001A905C /* LaunchScreen.storyboard in Resources */,
 				8ADC96352408EC9A001A905C /* Assets.xcassets in Resources */,
 				8ADC96332408EC91001A905C /* Main.storyboard in Resources */,
