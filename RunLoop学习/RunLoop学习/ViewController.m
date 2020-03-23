@@ -33,6 +33,10 @@
         NSLog(@"---end---");
     }];
     [self.thread start];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:<#(nonnull NSNotificationName)#> object:<#(nullable id)#>];
+    [[NSNotificationCenter defaultCenter] addObserver:<#(nonnull id)#> selector:<#(nonnull SEL)#> name:<#(nullable NSNotificationName)#> object:<#(nullable id)#>];
+    
 }
 
 - (void)doThings {

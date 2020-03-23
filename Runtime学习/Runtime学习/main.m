@@ -1,8 +1,8 @@
 //
 //  main.m
-//  内存管理
+//  Runtime学习
 //
-//  Created by 张倍浩 on 2020/3/5.
+//  Created by 张倍浩 on 2020/3/10.
 //  Copyright © 2020 Lincoln. All rights reserved.
 //
 
@@ -14,7 +14,6 @@ int main(int argc, char * argv[]) {
     @autoreleasepool {
         // Setup code that might create autoreleased objects goes here.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
-        [appDelegateClassName retain];
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }

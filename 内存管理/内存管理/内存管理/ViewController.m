@@ -32,6 +32,15 @@ BOOL isTaggedPointer(id pointer) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSObject *obj = [[[NSObject alloc] init] autorelease];
+    NSObject *obj2 = [[NSMutableArray array] retain];
+    NSString *str = [NSString stringWithFormat:@"test"];
+//    [obj2 retain];
+    
+    NSObject *obj3 = [[[[NSObject alloc] init] retain] autorelease];
+    NSLog(@"%zd, %zd, %zd, %zd", obj.retainCount, obj2.retainCount, obj3.retainCount, str.retainCount);
+    
     self.person = [[MJPerson alloc] init];
     // count=2 必须插入nil，否则会崩溃 EXC_BAD_ACCESS
     NSArray *array = [NSArray arrayWithObjects:@"1", @"2", nil, nil];
