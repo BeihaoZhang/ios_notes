@@ -132,7 +132,18 @@ func sumA(v1: Int, v2: Int, v3: Int) -> Int {
  1. 函数体比较长（会增加代码量，最后增加包体积）
  2. 包含递归调用
  3. 包含动态派发
+ 
+ 在Release模式下，编译器已经开启优化，会自动决定哪些函数需要内联，因此没必要使用@inline
  */
+
+// 永远不会被内联（即使开启了编译优化）
+@inline(never) func test() {
+    print("test")
+}
+// 开启编译优化后，即使代码很长，也会被内联（递归调用函数，动态派发函数除外）
+@inline(__always) func test2() {
+    print("test")
+}
 
 /*
  函数类型

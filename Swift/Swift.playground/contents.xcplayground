@@ -4,5 +4,6 @@
         <page name='区间Range'/>
         <page name='循环控制'/>
         <page name='函数'/>
+        <page name='枚举'/>
     </pages>
 </playground>
