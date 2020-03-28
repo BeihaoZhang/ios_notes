@@ -147,7 +147,84 @@ if let num3 = num1 {
  */
 
 
+// 枚举的内存布局分析
+/*
+ enum TestEnum {
+     case test1(Int, Int, Int)
+     case test2(Int, Int)
+     case test3(Int)
+     case test4(Bool)
+     case test5
+ }
+ 通过汇编代码可知，初始化枚举传值时，其实是直接将传入的值放到寄存器中，还有一个字节用来存放成员值（可以理解成成员变量的在枚举中的索引位置）
+ var e = TestEnum.test1(1, 2, 3)
+ 
+ */
+func testEnum() {
+    // 像这种的，系统只会分配一个字节的空间，但是枚举不占用该内存空间
+    enum TestEnum0 {
+        case test1
+    } // size: 0, stride: 1。因为只有一个成员变量，并且不是关联值，不需要存储直接就成获取到成员变量。
+    
+    enum TestEnum0_1 {
+           case test1, test2 // 再加一个 case test3 也是一样
+       } // size: 1, stride: 1。分配1个字节存储成员值（可以把成员值理解为成员变量的索引值）
+    
+    print(MemoryLayout<TestEnum0>.size, MemoryLayout<TestEnum0>.stride)
+    
+    enum TestEnum {
+        case test1(Int, Int, Int)
+        case test2(Int, Int)
+        case test3(Int)
+        case test4(Bool)
+        case test5
+    }
+    
+    // 1个字节存储成员值
+    // N个字节存储关联值（N取占用内存最大的关联值），任何一个case的关联值都共用这N个字节
+    // 共用体
+    
+    // 小端：高高低低
+    // 01 00 00 00 00 00 00 00
+    // 02 00 00 00 00 00 00 00
+    // 03 00 00 00 00 00 00 00
+    // 00
+    // 00 00 00 00 00 00 00
+    var e = TestEnum.test1(1, 2, 3)
+    print(Mems.ptr(ofVal: &e))
+    
+    // 04 00 00 00 00 00 00 00
+    // 05 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 01
+    // 00 00 00 00 00 00 00
+    e = .test2(4, 5)
+    print(Mems.memStr(ofVal: &e))
+    
+    // 06 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 02
+    // 00 00 00 00 00 00 00
+    e = .test3(6)
+    
+    // 01 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 03
+    // 00 00 00 00 00 00 00
+    e = .test4(true)
+    
+    // 00 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 00 00 00 00 00 00 00 00
+    // 04
+    // 00 00 00 00 00 00 00
+    e = .test5
+}
 
+
+testEnum()
 
 
 
