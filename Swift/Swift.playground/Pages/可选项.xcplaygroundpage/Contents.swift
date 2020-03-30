@@ -225,7 +225,3 @@ func testEnum() {
 
 
 testEnum()
-
-
-
-
