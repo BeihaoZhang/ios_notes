@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
+        <page name='Swift 5.2 特性'/>
         <page name='区间Range'/>
         <page name='循环控制'/>
         <page name='函数'/>
         <page name='枚举'/>
         <page name='可选项'/>
-        <page name='Swift 5.2 特性'/>
+        <page name='结构体和类'/>
     </pages>
 </playground>
